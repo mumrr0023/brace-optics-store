@@ -1,0 +1,150 @@
+# =============================================================================
+# SECURITY, SECRETS, KEYS & CREDENTIALS
+# =============================================================================
+# Environment files (never commit real secrets, tokens, or API keys)
+.env
+.env.*
+*.env
+.env.local
+.env.development
+.env.development.local
+.env.test
+.env.test.local
+.env.production
+.env.production.local
+.env.staging
+!.env.example
+!.env.template
+
+# Private keys, certificates, & keystores
+*.pem
+*.key
+*.crt
+*.cer
+*.csr
+*.der
+*.p12
+*.pfx
+*.jks
+*.keystore
+*.gpg
+*.asc
+*.kdbx
+id_rsa*
+id_ed25519*
+id_ecdsa*
+id_dsa*
+
+# Auth, cloud, & service account credentials
+*credentials*.json
+*service-account*.json
+*service_account*.json
+*secret*.json
+*secrets*.json
+*secret*.yaml
+*secret*.yml
+secrets/
+.secrets/
+private/
+.private/
+.aws/
+.gcp/
+.azure/
+.firebase/
+.npmrc
+.yarnrc
+.pypirc
+.netrc
+.htpasswd
+
+# Local databases & dumps
+*.sqlite
+*.sqlite3
+*.db
+*.sql
+*.dump
+*.bak
+
+# =============================================================================
+# PYTHON & VIRTUAL ENVIRONMENTS
+# =============================================================================
+.venv/
+venv/
+env/
+ENV/
+.Python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# =============================================================================
+# NODE.JS / NEXT.JS / FRONTEND BUILD & DEPENDENCIES
+# =============================================================================
+node_modules/
+.pnp
+.pnp.js
+.yarn/install-state.gz
+
+# Next.js build output & caches
+.next/
+out/
+build/
+dist/
+.turbo/
+.vercel/
+.netlify/
+
+# TypeScript & linter caches
+*.tsbuildinfo
+next-env.d.ts
+.eslintcache
+.stylelintcache
+
+# =============================================================================
+# LOGS, COVERAGE & DEBUG FILES
+# =============================================================================
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+next-panic-*.log
+coverage/
+.nyc_output/
+
+# =============================================================================
+# OS, EDITOR & AI ASSISTANT ARTIFACTS
+# =============================================================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# IDEs & Editors (keep shared workspace configs if needed, ignore local state)
+.idea/
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.swp
+*.swo
+*~
+
+# Local agent / assistant scratch directories
+.gemini/
+.claude/
+.cursor/
+
+# Private brand reference & personal business card assets (not used by the app)
+public/brand_reference/
+
